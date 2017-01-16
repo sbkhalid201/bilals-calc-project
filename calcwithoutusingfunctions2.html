@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<script type ="text/javascript">
+
+        function avg(){
+
+            var a = CALC.Input.value;
+            var b = a.split("+");
+            var c = b.length;
+            var d = eval(a);
+            var e = d/c;
+            return e;
+            }
+
+        </script>
+</head>
+<body>
+
+<form name="CALC">
+<table border=4>
+<tr>
+<td>
+<input type="text" name="input" size="16" id="input">
+<tr>
+<td>
+	
+<input type="button" name="one" value="1" onclick="CALC.input.value+='1'">
+<input type="button" name="two" value="2" onclick="CALC.input.value+='2'">
+
+<input type="button" name="three" value="3" onclick="CALC.input.value+='3'">
+<input type="button" name="four" value="4" onclick="CALC.input.value+='4'">
+
+<br>
+
+<input type="button" name="five" value="5" onclick="CALC.input.value+='5'">
+<input type="button" name="six" value="6" onclick="CALC.input.value+='6'">
+<input type="button" name="seven" value="7" onclick="CALC.input.value+='7'">
+<input type="button" name="eight" value="8" onclick="CALC.input.value+='8'">
+
+<br>
+
+<input type="button" name="nine" value="9" onclick="CALC.input.value+='9'">
+
+<input type="button" name="zero" value="0" onclick="CALC.input.value+='0'">
+
+
+<input type="button" name="plus" value="+" onclick="CALC.input.value+='+'">
+
+<input type="button" name="minus" value="-" onclick="CALC.input.value+='-'">
+
+ <br>
+
+<input type="button" name="Dolt" value="=" onclick="CALC.input.value = eval(CALC.input.value)">
+
+<input type="button" name="clear" value="C" onclick="CALC.input.value = ''">
+
+<input type="button" name="times" value="x" onclick="CALC.input.value+='*'">
+
+<input type="button" name="divide" value="/" onclick="CALC.input.value+='/'">
+
+<input type="button" name="average" value="avg" onclick="CALC.input.value=avg()">
+
+
+</td>
+</tr>
+	
+</table>
+	
+
+</form>
+
+</body>
+</html>
